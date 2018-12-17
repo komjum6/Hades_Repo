@@ -2,9 +2,35 @@
 #  
 [name] tester
 [components]
-hades.models.rtlib.io.IpinVector CONDITION 37200 15600 @N 1001 4 UUUU_B 1.0E-9 0
-hades.models.io.Opin TEST_SUCCEEDS 38400 15600 @N 1001 5.0E-9
+hades.models.gates.And4 i20 44400 70800 @N 1001 1.0E-8
+hades.models.io.Ipin Carry 34200 28200 @N 1001  U
+hades.models.rtlib.io.IpinVector CONDITION 37200 15600 @N 1001 4 0000_B 1.0E-9 0
+hades.models.gates.And4 i9 44400 31200 @N 1001 1.0E-8
+hades.models.gates.And4 i19 44400 67200 @N 1001 1.0E-8
+hades.models.gates.Nand2 i8 50400 28800 @N 1001 1.0E-8
+hades.models.gates.And4 i18 44400 63600 @N 1001 1.0E-8
+hades.models.gates.Nand2 i7 50400 25800 @N 1001 1.0E-8
+hades.models.gates.And4 i17 44400 60000 @N 1001 1.0E-8
+hades.models.gates.Nand2 i6 50400 22200 @N 1001 1.0E-8
+hades.models.gates.And4 i16 44400 56400 @N 1001 1.0E-8
+hades.models.gates.Nand2 i5 50400 18600 @N 1001 1.0E-8
+hades.models.gates.And4 i15 44400 52800 @N 1001 1.0E-8
+hades.models.gates.And4 i4 44400 27600 @N 1001 1.0E-8
+hades.models.gates.And4 i14 44400 49200 @N 1001 1.0E-8
+hades.models.gates.And4 i3 27000 24600 @N 1001 1.0E-8
+hades.models.gates.And4 i13 44400 45600 @N 1001 1.0E-8
+hades.models.gates.And4 i2 27000 21600 @N 1001 1.0E-8
+hades.models.gates.And4 i12 44400 42000 @N 1001 1.0E-8
+hades.models.gates.And4 i1 27000 18600 @N 1001 1.0E-8
+hades.models.io.Ipin Overflow 34200 24000 @N 1001  U
+hades.models.gates.And4 i11 44400 38400 @N 1001 1.0E-8
+hades.models.io.Ipin Zero 34200 30000 @N 1001  U
+hades.models.rtlib.io.Expander i0 39600 16200 @N 1001 4 1.0E-8
+hades.models.gates.And4 i10 44400 34800 @N 1001 1.0E-8
+hades.models.io.Ipin Negative 34200 26400 @N 1001  U
+hades.models.io.Opin TEST_SUCCEEDS 61200 16200 @N 1001 5.0E-9
 [end components]
 [signals]
+hades.signals.SignalStdLogicVector n0 4 2 CONDITION Y i0 A 2 2 37200 15600 40200 15600 2 40200 15600 40200 16200 0 
 [end signals]
 [end]
