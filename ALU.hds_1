@@ -4,11 +4,11 @@
 [components]
 hades.models.rtlib.io.IpinVector B 4800 600 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
 hades.models.rtlib.io.IpinVector A 4800 2400 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
-hades.models.rtlib.arith.RotateLeft i4 15600 20400 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
-hades.models.rtlib.arith.RotateLeft i3 15600 17400 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
-hades.models.rtlib.arith.RotateLeft i2 15600 14400 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
-hades.models.rtlib.arith.RotateLeft i1 15600 11400 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
-hades.models.rtlib.arith.RotateLeft i0 15600 8400 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.arith.RotateLeft i4 7800 22200 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.arith.RotateLeft i3 9600 18000 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.arith.RotateLeft i2 9600 14400 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.arith.RotateLeft i1 10200 11400 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.arith.RotateLeft i0 11400 8400 @N 1001 16 1 UUUUUUUUUUUUUUUU_B 1.0E-8
 hades.models.rtlib.io.IpinVector opcode 4800 4200 @N 1001 3 UUU_B 1.0E-9 0
 hades.models.io.Opin OVERFLOW 32400 23400 @N 1001 5.0E-9
 hades.models.io.Opin NEGATIVE 32400 25200 @N 1001 5.0E-9
