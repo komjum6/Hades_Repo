@@ -1,0 +1,10 @@
+# hades.models.Design file
+#  
+[name] tester
+[components]
+hades.models.rtlib.io.IpinVector CONDITION 37200 15600 @N 1001 4 UUUU_B 1.0E-9 0
+hades.models.io.Opin TEST_SUCCEEDS 38400 15600 @N 1001 5.0E-9
+[end components]
+[signals]
+[end signals]
+[end]

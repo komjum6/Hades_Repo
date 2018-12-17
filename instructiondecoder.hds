@@ -1,0 +1,14 @@
+# hades.models.Design file
+#  
+[name] instruction_decoder
+[components]
+hades.models.rtlib.io.OpinVector ADDR_B 51000 9600 @N 1001 4 1.0E-9 0
+hades.models.rtlib.io.OpinVector ADDR_A 51000 11400 @N 1001 4 1.0E-9 0
+hades.models.rtlib.io.OpinVector ADDR_DEST 51000 7800 @N 1001 4 1.0E-9 0
+hades.models.rtlib.io.OpinVector OPCODE 51000 13200 @N 1001 3 1.0E-9 0
+hades.models.rtlib.io.OpinVector CONDITION 51000 15000 @N 1001 4 1.0E-9 0
+hades.models.rtlib.io.IpinVector INSTRUCTION -11400 -15000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
+[end components]
+[signals]
+[end signals]
+[end]
