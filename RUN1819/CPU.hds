@@ -1,0 +1,32 @@
+# hades.models.Design file
+#  
+[name] RUN1819_CPU
+[components]
+hades.models.Design timer -1800 1200 @N 1001 ./timer.hds
+hades.models.Design registerbank 13200 -3600 @N 1001 ./registerbank.hds
+hades.models.Design instruction_decoder1 6000 1200 @N 1001 ./instructiondecoder.hds
+hades.models.rtlib.io.OpinVector DATABUS_OUT 31800 3000 @N 1001 32 1.0E-9 0
+hades.models.io.Opin nRE 31800 7200 @N 1001 5.0E-9
+hades.models.rtlib.io.IpinVector DATABUS_IN -3900 -3000 @N 1001 32 00000000000000000000000000000011_B 1.0E-9 0
+hades.models.io.Opin nWE 31800 8400 @N 1001 5.0E-9
+hades.models.Design Flag_Registerbank 13200 4200 @N 1001 C:/Users/david/Documents/Radboud/Processors/Practical\u0020assignment/GitShit/flagregisterbank.hds
+hades.models.rtlib.io.OpinVector ADDRESSBUS 31800 1200 @N 1001 32 1.0E-9 0
+hades.models.io.Opin HALTED 31200 -2400 @N 1001 5.0E-9
+hades.models.Design tester 21000 3600 @N 1001 C:/Users/david/Documents/Radboud/Processors/Practical\u0020assignment/Part\u00202/RUN1819/tester.hds
+hades.models.io.Ipin CLOCK -6600 6600 @N 1001  U
+hades.models.io.Ipin nRESET -6600 7800 @N 1001  U
+hades.models.Design ALU 21900 -3000 @N 1001 ./ALU.hds
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n8 4 2 instruction_decoder1 ADDR_B registerbank ADDR_B 4 2 10800 2400 11700 2400 2 11700 2400 11700 -900 2 11700 -900 11700 -1200 2 11700 -1200 13200 -1200 0 
+hades.signals.SignalStdLogicVector n7 4 2 instruction_decoder1 ADDR_DEST registerbank ADDR_DEST 3 2 10800 1800 11400 1800 2 11400 1800 11400 -1800 2 11400 -1800 13200 -1800 0 
+hades.signals.SignalStdLogicVector n6 32 2 DATABUS_IN Y instruction_decoder1 INSTRUCTION 3 2 -3900 -3000 5400 -3000 2 5400 -3000 5400 1800 2 5400 1800 6000 1800 0 
+hades.signals.SignalStdLogic1164 n5 2 timer HALT HALTED A 6 2 -1800 1800 -2100 1800 2 -2100 1800 -2100 -4200 2 -2100 -4200 30600 -4200 2 30600 -4200 30600 -2400 2 30600 -2400 30900 -2400 2 30900 -2400 31200 -2400 0 
+hades.signals.SignalStdLogicVector n15 4 2 instruction_decoder1 CONDITION tester CONDITION 5 2 10800 4200 12300 4200 2 12300 4200 12300 3900 2 12300 3900 20100 3900 2 20100 3900 20100 4200 2 20100 4200 21000 4200 0 
+hades.signals.SignalStdLogic1164 n14 2 Flag_Registerbank ZERO_OUT tester Z 1 2 18000 6600 21000 6600 0 
+hades.signals.SignalStdLogic1164 n13 2 Flag_Registerbank CARRY_OUT tester C 1 2 18000 6000 21000 6000 0 
+hades.signals.SignalStdLogic1164 n12 2 Flag_Registerbank NEGATIVE_OUT tester N 1 2 18000 5400 21000 5400 0 
+hades.signals.SignalStdLogic1164 n11 2 timer nRESET_OUT registerbank nRESET 3 2 3000 3600 4800 3600 2 4800 3600 4800 600 2 4800 600 13200 600 0 
+hades.signals.SignalStdLogic1164 n10 2 Flag_Registerbank OVERFLOW_OUT tester O 1 2 18000 4800 21000 4800 0 
+[end signals]
+[end]

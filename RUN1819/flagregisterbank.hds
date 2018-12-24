@@ -1,0 +1,18 @@
+# hades.models.Design file
+#  
+[name] Flag_Registerbank
+[components]
+hades.models.io.Ipin ZERO_IN 9000 16200 @N 1001  U
+hades.models.io.Opin NEGATIVE_OUT 19800 12600 @N 1001 5.0E-9
+hades.models.io.Opin CARRY_OUT 19800 14400 @N 1001 5.0E-9
+hades.models.io.Ipin OVERFLOW_IN 9000 10800 @N 1001  U
+hades.models.io.Opin OVERFLOW_OUT 19800 10800 @N 1001 5.0E-9
+hades.models.io.Ipin NEGATIVE_IN 9000 12600 @N 1001  U
+hades.models.io.Ipin CLOCK 9000 28800 @N 1001  U
+hades.models.io.Opin ZERO_OUT 19800 16200 @N 1001 5.0E-9
+hades.models.io.Ipin CARRY_IN 9000 14400 @N 1001  U
+hades.models.io.Ipin nRESET 9000 30600 @N 1001  U
+[end components]
+[signals]
+[end signals]
+[end]

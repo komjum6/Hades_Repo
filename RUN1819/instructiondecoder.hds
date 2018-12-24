@@ -1,0 +1,23 @@
+# hades.models.Design file
+#  
+[name] instruction_decoder
+[components]
+hades.models.rtlib.io.OpinVector ADDR_B 10200 -7800 @N 1001 4 1.0E-9 0
+hades.models.rtlib.io.OpinVector ADDR_A 10200 -6000 @N 1001 4 1.0E-9 0
+hades.models.io.Ipin EXECUTE -16200 -3600 @N 1001  U
+hades.models.rtlib.io.Expander i2 -14400 -10800 @N 1001 4 1.0E-8
+hades.models.rtlib.io.OpinVector ADDR_DEST 10200 -9600 @N 1001 4 1.0E-9 1
+hades.models.rtlib.io.OpinVector OPCODE 10200 -4200 @N 1001 3 1.0E-9 0
+hades.models.rtlib.io.Subset i0 -7800 -13200 @N 1001 32 3 0 0000_B 1.0E-8
+hades.models.rtlib.io.OpinVector CONDITION 10200 -2400 @N 1001 4 1.0E-9 0
+hades.models.rtlib.io.IpinVector INSTRUCTION -11400 -15000 @N 1001 32 00000000000000000010110000000000_B 1.0E-9 2
+hades.models.io.Ipin FETCH -16200 -2400 @N 1001  U
+hades.models.io.Ipin HALTED -16200 -4800 @N 1001  U
+hades.models.io.Ipin CLOCK -16200 -1200 @N 1001  U
+hades.models.io.Ipin nRESET -16200 0 @N 1001  U
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n1 4 2 i0 Y i2 A 3 2 -7800 -12600 -7800 -11400 2 -7800 -11400 -13800 -11400 2 -13800 -11400 -13800 -10800 0 
+hades.signals.SignalStdLogicVector n0 32 2 INSTRUCTION Y i0 A 2 2 -11400 -15000 -7800 -15000 2 -7800 -15000 -7800 -13200 0 
+[end signals]
+[end]
