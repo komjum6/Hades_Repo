@@ -1,0 +1,8 @@
+hades.symbols.BboxRectangle  0 0 4800 1200
+hades.symbols.Rectangle  0 0 4800 1200
+hades.symbols.PortLabel 4650 750 3 OPCODE
+hades.symbols.PortSymbol 4800 600 OPCODE
+hades.symbols.PortLabel 150 750 Instruction_in
+hades.symbols.PortSymbol 0 600 Instruction_in
+hades.symbols.InstanceLabel 150 1050 Opcode_switch
+hades.symbols.ClassLabel 150 450 Opcode_switch

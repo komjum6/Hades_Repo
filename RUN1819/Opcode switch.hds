@@ -1,0 +1,19 @@
+# hades.models.Design file
+#  
+[name] Opcode_switch
+[components]
+hades.models.rtlib.io.Subset i5 16800 10800 @N 1001 32 30 28 100_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i3 13800 13800 @N 1001 3 100_B 1.0E-8
+hades.models.rtlib.io.Constant i1 10800 9600 @N 1001 3 110_B 1.0E-8
+hades.models.rtlib.io.OpinVector OPCODE 22800 16200 @N 1001 3 1.0E-9 0
+hades.models.rtlib.io.SelectBit i0 9000 13800 @N 1001 32 31 1.0E-8
+hades.models.rtlib.io.IpinVector Instruction_in 7800 4200 @N 1001 32 01000000000000000000000000001101_B 1.0E-9 2
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n4 3 2 i3 Y OPCODE A 2 2 15600 15600 15600 16200 2 15600 16200 22800 16200 0 
+hades.signals.SignalStdLogic1164 n3 2 i0 Y i3 S 2 2 9000 14400 9000 15000 2 9000 15000 13800 15000 0 
+hades.signals.SignalStdLogicVector n2 3 2 i5 Y i3 A0 3 2 16800 11400 16800 12600 2 16800 12600 16200 12600 2 16200 12600 16200 13800 0 
+hades.signals.SignalStdLogicVector n1 32 3 Instruction_in Y i0 A i5 A 5 2 7800 4200 9000 4200 2 9000 8400 9000 13800 2 9000 4200 9000 8400 2 9000 8400 16800 8400 2 16800 8400 16800 10800 1 9000 8400 
+hades.signals.SignalStdLogicVector n0 3 2 i1 Y i3 A1 3 2 15000 13800 15000 12600 2 15000 12600 12600 12600 2 12600 12600 12600 11400 0 
+[end signals]
+[end]
