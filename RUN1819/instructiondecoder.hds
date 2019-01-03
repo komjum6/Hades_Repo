@@ -5,22 +5,23 @@
 hades.models.io.Ipin CLOCK -16200 -1200 @N 1001 null U
 hades.models.Design unnamed 6000 7200 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/Opcode_switch.hds
 hades.models.io.Opin nWE 10200 7800 @N 1001 5.0E-9
-hades.models.rtlib.muxes.Mux21 i8 -9000 -15600 @N 1001 32 10000000000000000010110000101111_B 1.0E-8
-hades.models.rtlib.io.Subset i5 4800 -12000 @N 1001 32 7 4 0010_B 1.0E-8
-hades.models.rtlib.io.Subset i4 4800 -9600 @N 1001 32 11 8 1100_B 1.0E-8
-hades.models.rtlib.io.IpinVector INSTRUCTION -15000 -21600 @N 1001 32 10000000000000000010110000101111_B 1.0E-9 2
-hades.models.rtlib.io.Subset i3 4800 -7200 @N 1001 32 15 12 0010_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i8 -9000 -15600 @N 1001 32 11100000000000000000000000000000_B 1.0E-8
+hades.models.gates.Or2 i6 4800 4800 @N 1001 1.0E-8
+hades.models.rtlib.io.Subset i5 4800 -12000 @N 1001 32 7 4 0000_B 1.0E-8
+hades.models.rtlib.io.Subset i4 4800 -9600 @N 1001 32 11 8 0000_B 1.0E-8
+hades.models.rtlib.io.IpinVector INSTRUCTION -15000 -21600 @N 1001 32 11100000000000000000000000000000_B 1.0E-9 2
+hades.models.rtlib.io.Subset i3 4800 -7200 @N 1001 32 15 12 0000_B 1.0E-8
 hades.models.rtlib.io.Constant i2 -7200 -19200 @N 1001 32 01100000000001000000111111111111_B 1.0E-8
 hades.models.io.Ipin EXECUTE -16200 -3600 @N 1001 null U
-hades.models.rtlib.register.RegRE i1 -10800 -19800 @N 1001 32 10000000000000000010110000101111_B 1.0E-8
-hades.models.rtlib.io.Subset i0 -7200 1800 @N 1001 32 3 0 1111_B 1.0E-8
+hades.models.rtlib.register.RegRE i1 -10800 -19800 @N 1001 32 11100000000000000000000000000000_B 1.0E-8
+hades.models.rtlib.io.Subset i0 4800 3000 @N 1001 32 3 0 0000_B 1.0E-8
 hades.models.Design unnamed17 -3600 3600 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/new.hds
 hades.models.Design unnamed16 -3600 4200 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/new.hds
 hades.models.Design unnamed15 -3000 4800 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/new.hds
 hades.models.Design unnamed14 -12000 -15000 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/new.hds
 hades.models.Design unnamed13 -12000 -15000 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/new.hds
 hades.models.Design unnamed12 -12000 -15000 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/new.hds
-hades.models.rtlib.io.OpinVector OPCODE 10200 600 @N 1001 3 1.0E-9 2
+hades.models.rtlib.io.OpinVector OPCODE 10200 -600 @N 1001 3 1.0E-9 2
 hades.models.Design unnamed11 -12000 -15000 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/new.hds
 hades.models.Design unnamed10 -12000 -15000 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/new.hds
 hades.models.rtlib.io.OpinVector ADDR_DEST 10200 -10800 @N 1001 4 1.0E-9 0
@@ -39,25 +40,29 @@ hades.models.rtlib.io.OpinVector CONSTANT 10200 -3600 @N 1001 32 1.0E-9 0
 hades.models.io.Ipin nRESET -16200 0 @N 1001 null U
 hades.models.rtlib.io.OpinVector ADDR_B 10200 -8400 @N 1001 4 1.0E-9 2
 hades.models.rtlib.io.OpinVector ADDR_A 10200 -6000 @N 1001 4 1.0E-9 2
+hades.models.Design Read_write_swtich -3000 6000 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/Read\u002c\u0020write\u0020switch.hds
 hades.models.Design Constant_converter 2400 -4200 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/constant_converter.hds
 hades.models.io.Opin nRE 10200 6000 @N 1001 5.0E-9
-hades.models.Design Opcode_switch 2400 0 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/Opcode\u0020switch.hds
+hades.models.Design Opcode_switch 2400 -1200 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/Opcode\u0020switch.hds
 hades.models.io.Ipin FETCH -16200 -2400 @N 1001 null U
 [end components]
 [signals]
-hades.signals.SignalStdLogicVector n9 4 2 i0 Y CONDITION A 2 2 -7200 2400 -7200 4200 2 -7200 4200 10200 4200 0 
+hades.signals.SignalStdLogicVector n9 4 2 i0 Y CONDITION A 2 2 4800 3600 4800 4200 2 4800 4200 10200 4200 0 
 hades.signals.SignalStdLogicVector n8 4 2 i3 Y ADDR_A A 2 2 4800 -6600 4800 -6000 2 4800 -6000 10200 -6000 0 
 hades.signals.SignalStdLogicVector n7 4 2 i4 Y ADDR_B A 2 2 4800 -9000 4800 -8400 2 4800 -8400 10200 -8400 0 
 hades.signals.SignalStdLogicVector n6 4 2 i5 Y ADDR_DEST A 2 2 4800 -11400 4800 -10800 2 4800 -10800 10200 -10800 0 
 hades.signals.SignalStdLogicVector n5 32 2 Constant_converter CONSTANT CONSTANT A 1 2 7200 -3600 10200 -3600 0 
 hades.signals.SignalStdLogic1164 n4 2 nRESET Y i1 NR 3 2 -16200 0 -12000 0 2 -12000 0 -12000 -18000 2 -12000 -18000 -10800 -18000 0 
 hades.signals.SignalStdLogic1164 n3 2 CLOCK Y i1 CLK 4 2 -16200 -1200 -12600 -1200 2 -12600 -1200 -12600 -18600 2 -12600 -18600 -10800 -18600 2 -16200 -1200 -16800 -1200 0 
-hades.signals.SignalStdLogic1164 n2 3 FETCH Y i1 ENA nRE A 5 2 -16200 -2400 -13200 -2400 2 -13200 -2400 -13200 -19200 2 -13200 -19200 -10800 -19200 2 -13200 -2400 -13200 6000 2 -13200 6000 10200 6000 1 -13200 -2400 
+hades.signals.SignalStdLogic1164 n15 2 Read_write_swtich nWE nWE A 3 2 1800 7200 3600 7200 2 3600 7200 3600 7800 2 3600 7800 10200 7800 0 
+hades.signals.SignalStdLogic1164 n2 3 FETCH Y i1 ENA i6 A 5 2 -16200 -2400 -13200 -2400 2 -13200 -2400 -13200 -19200 2 -13200 -19200 -10800 -19200 2 -13200 -2400 -13200 5400 2 -13200 5400 4800 5400 1 -13200 -2400 
 hades.signals.SignalStdLogicVector n1 32 2 INSTRUCTION Y i1 D 2 2 -15000 -21600 -9000 -21600 2 -9000 -21600 -9000 -19800 0 
 hades.signals.SignalStdLogic1164 n14 2 EXECUTE Y i8 S 3 2 -16200 -3600 -10800 -3600 2 -10800 -3600 -10800 -14400 2 -10800 -14400 -9000 -14400 0 
-hades.signals.SignalStdLogicVector n0 3 2 Opcode_switch OPCODE OPCODE A 1 2 7200 600 10200 600 0 
+hades.signals.SignalStdLogicVector n0 3 2 Opcode_switch OPCODE OPCODE A 1 2 10200 -600 7200 -600 0 
 hades.signals.SignalStdLogicVector n13 32 2 i2 Y i8 A0 3 2 -5400 -17400 -5400 -16800 2 -5400 -16800 -6600 -16800 2 -6600 -16800 -6600 -15600 0 
-hades.signals.SignalStdLogicVector n5_0_0 32 7 i8 Y Opcode_switch Instruction_in i0 A i3 A i4 A i5 A Constant_converter INSTRUCTION 16 2 -7200 -3000 -7200 600 2 -7200 600 2400 600 2 -7200 600 -7200 1800 2 -7200 -7800 -7200 -5400 2 -7200 -3600 -7200 -3000 2 -7200 -10200 -7200 -7800 2 -7200 -7800 4800 -7800 2 4800 -7800 4800 -7200 2 -7200 -12600 -7200 -10200 2 -7200 -10200 4800 -10200 2 4800 -10200 4800 -9600 2 -7200 -12600 4800 -12600 2 4800 -12600 4800 -12000 2 -7200 -12600 -7200 -13800 2 -7200 -5400 -7200 -3600 2 -7200 -3600 2400 -3600 5 -7200 -3600 -7200 -10200 -7200 -12600 -7200 -7800 -7200 600 
+hades.signals.SignalStdLogicVector n5_0_0 32 8 i8 Y i3 A i4 A i5 A Constant_converter INSTRUCTION i0 A Opcode_switch Instruction_in Read_write_swtich INSTRUCTION 21 2 -7200 -600 -7200 600 2 -7200 -7800 -7200 -5400 2 -7200 -3600 -7200 -3000 2 -7200 -10200 -7200 -7800 2 -7200 -7800 4800 -7800 2 4800 -7800 4800 -7200 2 -7200 -12600 -7200 -10200 2 -7200 -10200 4800 -10200 2 4800 -10200 4800 -9600 2 -7200 -12600 4800 -12600 2 4800 -12600 4800 -12000 2 -7200 -12600 -7200 -13800 2 -7200 -5400 -7200 -3600 2 -7200 -3600 2400 -3600 2 -7200 2400 -7200 6600 2 -7200 600 -7200 2400 2 -7200 2400 4800 2400 2 4800 2400 4800 3000 2 -7200 -3000 -7200 -600 2 -7200 -600 2400 -600 2 -7200 6600 -3000 6600 6 -7200 -12600 -7200 -3600 -7200 -7800 -7200 2400 -7200 -600 -7200 -10200 
 hades.signals.SignalStdLogicVector n12 32 2 i1 Q i8 A1 3 2 -9000 -17400 -9000 -16800 2 -9000 -16800 -7800 -16800 2 -7800 -16800 -7800 -15600 0 
+hades.signals.SignalStdLogic1164 n11 2 Read_write_swtich nRE i6 B 1 2 1800 6600 4800 6600 0 
+hades.signals.SignalStdLogic1164 n10 2 i6 Y nRE A 1 2 8400 6000 10200 6000 0 
 [end signals]
 [end]
