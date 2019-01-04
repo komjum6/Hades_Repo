@@ -10,8 +10,8 @@ hades.symbols.PortLabel 4650 1350 3 OVERFLOW
 hades.symbols.PortSymbol 4800 1200 OVERFLOW
 hades.symbols.PortLabel 4650 750 3 RESULT
 hades.symbols.PortSymbol 4800 600 RESULT
-hades.symbols.PortLabel 150 1950 opcode
-hades.symbols.PortSymbol 0 1800 opcode
+hades.symbols.PortLabel 150 1950 OPCODE
+hades.symbols.PortSymbol 0 1800 OPCODE
 hades.symbols.PortLabel 150 1350 A
 hades.symbols.PortSymbol 0 1200 A
 hades.symbols.PortLabel 150 750 B

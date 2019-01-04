@@ -14,16 +14,16 @@ hades.models.io.Vcc i6 -12000 29700 @N 1001
 hades.models.rtlib.io.IpinVector B -23700 -4800 @N 1001 32 00100101101001011010010110100110_B 1.0E-9 2
 hades.models.rtlib.io.IpinVector A -23700 -3600 @N 1001 32 11011110000100001111010001001101_B 1.0E-9 2
 hades.models.rtlib.logic.BitwiseAnd i5 -20400 14400 @N 1001 32 11011010000100000101000001001001_B 1.0E-8
-hades.models.Design NxROL -20400 18900 @N 1001 C:/Users/david/Documents/Radboud/Processors/Practical\u0020assignment/Part\u00202/RUN1819/ROL.hds
+hades.models.Design NxROL -20400 18900 @N 1001 ./ROL.hds
 hades.models.rtlib.io.SmallConstant i4 -19200 9600 @N 1001 32 11111111111111111111111111111111_B 1.0E-8
 hades.models.rtlib.logic.BitwiseAnd i3 -20400 6000 @N 1001 32 00000100000000001010010000000100_B 1.0E-8
 hades.models.rtlib.logic.BitwiseXor i2 -20400 600 @N 1001 32 11111011101101010101000111101011_B 1.0E-8
 hades.models.rtlib.logic.BitwiseXor i12 -18600 30000 @N 1001 32 11011010010110100101101001011001_B 1.0E-8
 hades.models.rtlib.logic.BitwiseOr i1 -20400 -3000 @N 1001 32 11111111101101011111010111101111_B 1.0E-8
-hades.models.Design Multiplexer_ALU_C -8700 2400 @N 1001 C:/Users/david/Documents/Radboud/Processors/Practical\u0020assignment/Part\u00202/RUN1819/Multiplexer_ALU_C.hds
+hades.models.Design Multiplexer_ALU_C -8700 2400 @N 1001 ./Multiplexer_ALU_C.hds
 hades.models.rtlib.arith.Addc i11 -20400 33000 @N 1001 32 10111000011010110100111010100111_B 1.0E-8
 hades.models.rtlib.arith.Addc i0 -20400 23700 @N 1001 32 00000011101101101001100111110011_B 1.0E-8
-hades.models.Design Flag_Setter -8700 20700 @N 1001 C:/Users/david/Documents/Radboud/Processors/Practical\u0020assignment/Part\u00202/RUN1819/FlagSetter_ALU.hds
+hades.models.Design Flag_Setter -8700 20700 @N 1001 ./FlagSetter_ALU.hds
 hades.models.io.Opin ZERO 600 24900 @N 1001 5.0E-9
 hades.models.rtlib.io.OpinVector RESULT 600 19800 @N 1001 32 1.0E-9 2
 [end components]
