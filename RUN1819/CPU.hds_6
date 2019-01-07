@@ -1,0 +1,58 @@
+# hades.models.Design file
+#  
+[name] RUN1819_CPU
+[components]
+hades.models.Design Flag_Registerbank1 15300 9600 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/flagregisterbank.hds
+hades.models.Design ALU 24000 -600 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/ALU.hds
+hades.models.rtlib.io.OpinVector ADDRESSBUS 38400 1200 @N 1001 32 1.0E-9 0
+hades.models.io.Opin HALTED 38400 -3600 @N 1001 5.0E-9
+hades.models.io.Opin nRE 39000 5700 @N 1001 5.0E-9
+hades.models.Design timer -1800 1800 @N 1001 ./timer.hds
+hades.models.io.Ipin CLOCK -6600 6600 @N 1001 null U
+hades.models.rtlib.io.OpinVector DATABUS_OUT 38400 3000 @N 1001 32 1.0E-9 0
+hades.models.rtlib.muxes.Mux21 i3 34200 -1800 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.muxes.Mux21 i2 21000 -3000 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.Design registerbank 14700 -600 @N 1001 ./registerbank.hds
+hades.models.Design tester1 31200 8700 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/tester.hds
+hades.models.rtlib.muxes.Mux21 i0 12300 -3300 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.rtlib.io.IpinVector DATABUS_IN -3900 -3000 @N 1001 32 00000000000000000000000000000000_B 1.0E-9 0
+hades.models.Design tester 21000 3600 @N 1001 C:/Users/david/Documents/Radboud/Processors/Practical\u0020assignment/Part\u00202/RUN1819/tester.hds
+hades.models.Design instruction_decoder 6600 1800 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/instructiondecoder.hds
+hades.models.Design Flag_Registerbank 13200 4200 @N 1001 C:/Users/david/Documents/Radboud/Processors/Practical\u0020assignment/GitShit/flagregisterbank.hds
+hades.models.Design Flag_Registerbank4 23700 9300 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/flagregisterbank.hds
+hades.models.Design Flag_Registerbank3 16200 9300 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/flagregisterbank.hds
+hades.models.io.Ipin nRESET -6600 7800 @N 1001 null U
+hades.models.Design Flag_Registerbank2 16200 9300 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/flagregisterbank.hds
+hades.models.io.Opin nWE 39000 7200 @N 1001 5.0E-9
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 Flag_Registerbank4 NEGATIVE_OUT tester1 N 1 2 28500 10500 31200 10500 0 
+hades.signals.SignalStdLogic1164 n8 2 Flag_Registerbank4 OVERFLOW_OUT tester1 O 1 2 28500 9900 31200 9900 0 
+hades.signals.SignalStdLogic1164 n7 4 CLOCK Y instruction_decoder CLOCK Flag_Registerbank4 CLOCK timer CLOCK 9 2 -2400 6600 4800 6600 2 4800 6600 4800 4200 2 4800 4200 6600 4200 2 4800 6600 4800 12900 2 4800 12900 23400 12900 2 23400 12900 23700 12900 2 -6600 6600 -2400 6600 2 -2400 6600 -2400 3600 2 -2400 3600 -1800 3600 2 -2400 6600 4800 6600 
+hades.signals.SignalStdLogic1164 n6 3 timer nRESET_OUT instruction_decoder nRESET Flag_Registerbank4 nRESET 5 2 3000 4200 4200 4200 2 4200 4200 4200 4800 2 4200 4800 6600 4800 2 4200 4800 4200 13500 2 4200 13500 23700 13500 1 4200 4800 
+hades.signals.SignalStdLogic1164 n19 2 instruction_decoder nRE nRE A 3 2 11400 6600 37800 6600 2 37800 6600 37800 5700 2 37800 5700 39000 5700 0 
+hades.signals.SignalStdLogicVector n5 32 2 i3 A0 i0 A0 7 2 30000 -2400 30000 -4200 2 30000 -4200 15000 -4200 2 30000 -2400 35400 -2400 2 35400 -2400 36600 -2400 2 36600 -2400 36600 -1800 2 15000 -4200 14700 -4200 2 14700 -4200 14700 -3300 0 
+hades.signals.SignalStdLogic1164 n18 2 instruction_decoder nWE nWE A 1 2 39000 7200 11400 7200 0 
+hades.signals.SignalStdLogic1164 n4 2 nRESET Y timer nRESET_IN 3 2 -6600 7800 -3000 7800 2 -3000 7800 -3000 4200 2 -3000 4200 -1800 4200 0 
+hades.signals.SignalStdLogic1164 n17 2 instruction_decoder HALT timer HALT 5 2 11400 8400 15000 8400 2 15000 8400 15000 15900 2 15000 15900 -3900 15900 2 -3900 15900 -3900 2400 2 -3900 2400 -1800 2400 0 
+hades.signals.SignalStdLogic1164 n3 2 timer FETCH instruction_decoder FETCH 1 2 3000 3600 6600 3600 0 
+hades.signals.SignalStdLogic1164 n16 2 tester1 TEST_SUCCEEDS timer TEST_SUCCEEDS 6 2 36000 9300 36900 9300 2 36900 9300 36900 15300 2 36900 15300 -3300 15300 2 -3300 15300 -3300 3300 2 -3300 3300 -3300 3000 2 -3300 3000 -1800 3000 0 
+hades.signals.SignalStdLogic1164 n2 2 timer HALTED HALTED A 5 2 3000 2400 4200 2400 2 4200 2400 4200 -5100 2 4200 -5100 35400 -5100 2 35400 -5100 35400 -3600 2 35400 -3600 38400 -3600 0 
+hades.signals.SignalStdLogic1164 n15 2 instruction_decoder FLAGS_SET Flag_Registerbank4 Set_Flag 3 2 11400 7800 15600 7800 2 15600 7800 15600 12300 2 15600 12300 23700 12300 0 
+hades.signals.SignalStdLogicVector n1 32 2 DATABUS_IN Y instruction_decoder INSTRUCTION 3 2 -3900 -3000 5400 -3000 2 5400 -3000 5400 2400 2 5400 2400 6600 2400 0 
+hades.signals.SignalStdLogic1164 n14 2 Flag_Registerbank4 ZERO_OUT tester1 Z 1 2 28500 11700 31200 11700 0 
+hades.signals.SignalStdLogic1164 n0 2 timer EXECUTE instruction_decoder EXECUTE 1 2 3000 3000 6600 3000 0 
+hades.signals.SignalStdLogicVector n13 32 2 registerbank REG_B i2 A1 4 2 19500 0 20100 0 2 20100 0 20100 -3600 2 20100 -3600 22200 -3600 2 22200 -3600 22200 -3000 0 
+hades.signals.SignalStdLogicVector n12 32 2 i2 Y ALU B 2 2 22800 -1200 22800 0 2 22800 0 24000 0 0 
+hades.signals.SignalStdLogic1164 n11 2 Flag_Registerbank4 CARRY_OUT tester1 C 1 2 28500 11100 31200 11100 0 
+hades.signals.SignalStdLogicVector n10 3 2 instruction_decoder OPCODE ALU OPCODE 3 2 11400 4800 22800 4800 2 22800 4800 22800 1200 2 22800 1200 24000 1200 0 
+hades.signals.SignalStdLogicVector n27 32 2 instruction_decoder CONSTANT i2 A0 5 2 11400 4200 12300 4200 2 12300 4200 20400 4200 2 20400 4200 20400 -4500 2 20400 -4500 23400 -4500 2 23400 -4500 23400 -3000 0 
+hades.signals.SignalStdLogicVector n26 4 2 instruction_decoder ADDR_DEST registerbank ADDR_DEST 4 2 11400 2400 12900 2400 2 12900 2400 12900 1500 2 12900 1500 12900 1200 2 12900 1200 14700 1200 0 
+hades.signals.SignalStdLogicVector n25 32 2 i3 Y ADDRESSBUS A 2 2 36000 0 36000 1200 2 36000 1200 38400 1200 0 
+hades.signals.SignalStdLogicVector n24 4 2 instruction_decoder ADDR_A registerbank ADDR_A 3 2 11400 3600 13500 3600 2 13500 3600 13500 2400 2 13500 2400 14700 2400 0 
+hades.signals.SignalStdLogicVector n23 4 2 instruction_decoder ADDR_B registerbank ADDR_B 3 2 11400 3000 13200 3000 2 13200 3000 13200 1800 2 13200 1800 14700 1800 0 
+hades.signals.SignalStdLogicVector n22 32 2 i0 Y registerbank DATA 2 2 14100 -1500 14100 0 2 14100 0 14700 0 0 
+hades.signals.SignalStdLogicVector n21 32 2 registerbank REG_A ALU A 1 2 19500 600 24000 600 0 
+hades.signals.SignalStdLogicVector n20 4 2 instruction_decoder CONDITION tester1 CONDITION 3 2 11400 6000 30000 6000 2 30000 6000 30000 9300 2 30000 9300 31200 9300 0 
+[end signals]
+[end]

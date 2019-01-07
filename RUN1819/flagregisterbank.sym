@@ -1,5 +1,5 @@
-hades.symbols.BboxRectangle  0 0 4800 4200
-hades.symbols.Rectangle  0 0 4800 4200
+hades.symbols.BboxRectangle  0 0 4800 4800
+hades.symbols.Rectangle  0 0 4800 4800
 hades.symbols.PortLabel 4650 2550 3 ZERO_OUT
 hades.symbols.PortSymbol 4800 2400 ZERO_OUT
 hades.symbols.PortLabel 4650 1950 3 CARRY_OUT
@@ -8,10 +8,12 @@ hades.symbols.PortLabel 4650 1350 3 NEGATIVE_OUT
 hades.symbols.PortSymbol 4800 1200 NEGATIVE_OUT
 hades.symbols.PortLabel 4650 750 3 OVERFLOW_OUT
 hades.symbols.PortSymbol 4800 600 OVERFLOW_OUT
-hades.symbols.PortLabel 150 3750 nRESET
-hades.symbols.PortSymbol 0 3600 nRESET
-hades.symbols.PortLabel 150 3150 CLOCK
-hades.symbols.PortSymbol 0 3000 CLOCK
+hades.symbols.PortLabel 150 4350 nRESET
+hades.symbols.PortSymbol 0 4200 nRESET
+hades.symbols.PortLabel 150 3750 CLOCK
+hades.symbols.PortSymbol 0 3600 CLOCK
+hades.symbols.PortLabel 150 3150 Set_Flag
+hades.symbols.PortSymbol 0 3000 Set_Flag
 hades.symbols.PortLabel 150 2550 ZERO_IN
 hades.symbols.PortSymbol 0 2400 ZERO_IN
 hades.symbols.PortLabel 150 1950 CARRY_IN
@@ -20,5 +22,5 @@ hades.symbols.PortLabel 150 1350 NEGATIVE_IN
 hades.symbols.PortSymbol 0 1200 NEGATIVE_IN
 hades.symbols.PortLabel 150 750 OVERFLOW_IN
 hades.symbols.PortSymbol 0 600 OVERFLOW_IN
-hades.symbols.InstanceLabel 150 4050 Flag_Registerbank
+hades.symbols.InstanceLabel 150 4650 Flag_Registerbank
 hades.symbols.ClassLabel 150 450 Flag_Registerbank
