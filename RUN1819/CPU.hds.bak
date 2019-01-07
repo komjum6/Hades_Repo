@@ -17,7 +17,7 @@ hades.models.gates.InvSmall i1 9600 -2700 @N 1001 5.0E-9
 hades.models.Design tester1 31200 8700 @N 1001 ./tester.hds
 hades.models.rtlib.muxes.Mux21 i0 12300 -3300 @N 1001 32 11111111111111111111111111000100_B 1.0E-8
 hades.models.rtlib.io.IpinVector DATABUS_IN -3900 -3000 @N 1001 32 10011111111111111111111111111111_B 1.0E-9 2
-hades.models.Design instruction_decoder 6900 1800 @N 1001 ./instructiondecoder.hds
+hades.models.Design instruction_decoder 6900 1800 @N 1001 C:/Users/julia/Documents/GitHub/Hades_Repo/RUN1819/instructiondecoder.hds
 hades.models.Design Flag_Registerbank4 23700 9300 @N 1001 ./flagregisterbank.hds
 hades.models.io.Ipin nRESET -6600 7800 @N 1001  U
 hades.models.io.Opin nWE 39000 7200 @N 1001 5.0E-9

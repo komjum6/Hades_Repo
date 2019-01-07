@@ -1,0 +1,27 @@
+# hades.models.Design file
+#  
+[name] PUSH_POP
+[components]
+hades.models.gates.InvSmall i5 18900 17100 @N 1001 5.0E-9
+hades.models.gates.InvSmall i4 19050 14550 @N 1001 5.0E-9
+hades.models.gates.Nor4 i3 21600 13050 @N 1001 1.0E-8
+hades.models.gates.Nor4 i2 21600 16200 @N 1001 1.0E-8
+hades.models.rtlib.io.ExpanderVertical i1 15600 12750 @N 1001 4 1.0E-8
+hades.models.rtlib.io.Subset i0 16200 10800 @N 1001 32 29 26 0001_B 1.0E-8
+hades.models.io.Opin POP 26400 17400 @N 1001 5.0E-9
+hades.models.io.Opin PUSH 26400 14250 @N 1001 5.0E-9
+hades.models.rtlib.io.IpinVector INSTRUCTION 13200 10200 @N 1001 32 11000100000000000110111011101111_B 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogic1164 n9 2 i2 Y POP A 1 2 25200 17400 26400 17400 0 
+hades.signals.SignalStdLogic1164 n8 2 i5 Y i2 C 1 2 20700 17700 21600 17700 0 
+hades.signals.SignalStdLogic1164 n7 2 i3 Y PUSH A 1 2 25200 14250 26400 14250 0 
+hades.signals.SignalStdLogic1164 n6 3 i1 Y3 i3 A i2 D 4 2 17250 13350 21600 13350 2 16800 13350 17250 13350 2 17250 13350 17250 18300 2 17250 18300 21600 18300 1 17250 13350 
+hades.signals.SignalStdLogic1164 n5 3 i1 Y2 i3 B i5 A 5 2 17550 13950 21600 13950 2 16800 13950 17550 13950 2 17550 13950 17550 17550 2 17550 17550 17550 17700 2 17550 17700 18900 17700 1 17550 13950 
+hades.signals.SignalStdLogic1164 n4 3 i1 Y1 i3 C i2 B 4 2 18000 14550 21600 14550 2 16800 14550 18000 14550 2 18000 14550 18000 17100 2 18000 17100 21600 17100 1 18000 14550 
+hades.signals.SignalStdLogic1164 n3 3 i1 Y0 i4 A i2 A 4 2 18450 15150 19050 15150 2 16800 15150 18450 15150 2 18450 15150 18450 16500 2 18450 16500 21600 16500 1 18450 15150 
+hades.signals.SignalStdLogic1164 n2 2 i4 Y i3 D 1 2 20850 15150 21600 15150 0 
+hades.signals.SignalStdLogicVector n1 4 2 i0 Y i1 A 1 2 16200 11400 16200 12750 0 
+hades.signals.SignalStdLogicVector n0 32 2 INSTRUCTION Y i0 A 2 2 13200 10200 16200 10200 2 16200 10200 16200 10800 0 
+[end signals]
+[end]
