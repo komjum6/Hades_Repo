@@ -1,0 +1,25 @@
+# hades.models.Design file
+#  
+[name] CPU_mux
+[components]
+hades.models.rtlib.muxes.Mux21 i2 -32700 900 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-8
+hades.models.gates.Nand2 i1 -37800 900 @N 1001 1.0E-8
+hades.models.rtlib.io.IpinVector REG_B -42000 -1500 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
+hades.models.io.Ipin nRE -45600 3000 @N 1001 null U
+hades.models.gates.Xor2 i0 -43500 2400 @N 1001 1.0E-8
+hades.models.io.Ipin nWE -45600 4500 @N 1001 null U
+hades.models.io.Ipin FETCH -45600 1500 @N 1001 null U
+hades.models.rtlib.io.OpinVector ADDRESSBUS -27000 4500 @N 1001 32 1.0E-9 0
+hades.models.rtlib.io.IpinVector RESULT -42000 0 @N 1001 32 UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU_B 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n7 32 2 i2 Y ADDRESSBUS A 2 2 -30900 2700 -30900 4500 2 -30900 4500 -27000 4500 0 
+hades.signals.SignalStdLogicVector n6 32 2 REG_B Y i2 A0 2 2 -42000 -1500 -30300 -1500 2 -30300 -1500 -30300 900 0 
+hades.signals.SignalStdLogicVector n5 32 2 RESULT Y i2 A1 2 2 -42000 0 -31500 0 2 -31500 0 -31500 900 0 
+hades.signals.SignalStdLogic1164 n4 2 i1 Y i2 S 1 2 -34200 2100 -32700 2100 0 
+hades.signals.SignalStdLogic1164 n3 2 FETCH Y i1 A 1 2 -45600 1500 -37800 1500 0 
+hades.signals.SignalStdLogic1164 n2 2 nWE Y i0 B 3 2 -45600 4500 -44100 4500 2 -44100 4500 -44100 4200 2 -44100 4200 -43500 4200 0 
+hades.signals.SignalStdLogic1164 n1 2 nRE Y i0 A 1 2 -45600 3000 -43500 3000 0 
+hades.signals.SignalStdLogic1164 n0 2 i0 Y i1 B 3 2 -39900 3600 -38400 3600 2 -38400 3600 -38400 2700 2 -38400 2700 -37800 2700 0 
+[end signals]
+[end]
