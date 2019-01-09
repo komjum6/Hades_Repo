@@ -1,0 +1,10 @@
+hades.symbols.BboxRectangle  0 0 4800 2400
+hades.symbols.Rectangle  0 0 4800 2400
+hades.symbols.PortLabel 4650 1950 3 address_bus
+hades.symbols.PortSymbol 4800 1800 address_bus
+hades.symbols.PortLabel 4650 1350 3 data_bus_from_CPU
+hades.symbols.PortSymbol 4800 1200 data_bus_from_CPU
+hades.symbols.PortLabel 4650 750 3 data_bus_to_CPU
+hades.symbols.PortSymbol 4800 600 data_bus_to_CPU
+hades.symbols.InstanceLabel 150 2250 computer
+hades.symbols.ClassLabel 150 450 computer

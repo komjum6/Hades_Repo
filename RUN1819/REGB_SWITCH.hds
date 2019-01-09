@@ -1,0 +1,25 @@
+# hades.models.Design file
+#  
+[name] unnamed
+[components]
+hades.models.gates.Nand2 i7 10800 6000 @N 1001 1.0E-8
+hades.models.gates.InvSmall i6 8400 7200 @N 1001 5.0E-9
+hades.models.rtlib.io.Constant i5 15600 600 @N 1001 4 0000_B 1.0E-8
+hades.models.rtlib.io.SelectBit i4 10200 4200 @N 1001 32 31 1.0E-8
+hades.models.rtlib.io.SelectBit i3 7200 4200 @N 1001 32 30 1.0E-8
+hades.models.rtlib.muxes.Mux21 i2 15000 6000 @N 1001 4 UUUU_B 1.0E-8
+hades.models.rtlib.io.Subset i1 16200 4200 @N 1001 32 11 8 0000_B 1.0E-8
+hades.models.rtlib.io.OpinVector REG_B 19200 9600 @N 1001 4 1.0E-9 0
+hades.models.rtlib.io.IpinVector INSTRUCTION 5400 3000 @N 1001 32 00000000000000000000000000001001_B 1.0E-9 0
+[end components]
+[signals]
+hades.signals.SignalStdLogicVector n7 4 2 i2 Y REG_B A 2 2 16800 7800 16800 9600 2 16800 9600 19200 9600 0 
+hades.signals.SignalStdLogic1164 n6 2 i7 Y i2 S 1 2 14400 7200 15000 7200 0 
+hades.signals.SignalStdLogicVector n5 4 2 i5 Y i2 A0 1 2 17400 2400 17400 6000 0 
+hades.signals.SignalStdLogicVector n4 4 2 i1 Y i2 A1 1 2 16200 4800 16200 6000 0 
+hades.signals.SignalStdLogic1164 n3 2 i4 Y i7 A 2 2 10200 6600 10800 6600 2 10200 6600 10200 4800 0 
+hades.signals.SignalStdLogic1164 n2 2 i6 Y i7 B 1 2 10200 7800 10800 7800 0 
+hades.signals.SignalStdLogic1164 n1 2 i3 Y i6 A 2 2 7200 7800 8400 7800 2 7200 7800 7200 4800 0 
+hades.signals.SignalStdLogicVector n0 32 4 INSTRUCTION Y i1 A i3 A i4 A 6 2 10200 3000 16200 3000 2 16200 3000 16200 4200 2 7200 3000 7200 4200 2 7200 3000 10200 3000 2 10200 3000 10200 4200 2 7200 3000 5400 3000 2 7200 3000 10200 3000 
+[end signals]
+[end]
