@@ -6,10 +6,10 @@ hades.symbols.PortLabel 150 3150 nWE
 hades.symbols.PortSymbol 0 3000 nWE
 hades.symbols.PortLabel 150 2550 nRE
 hades.symbols.PortSymbol 0 2400 nRE
-hades.symbols.PortLabel 150 1950 FETCH
-hades.symbols.PortSymbol 0 1800 FETCH
-hades.symbols.PortLabel 150 1350 RESULT
-hades.symbols.PortSymbol 0 1200 RESULT
+hades.symbols.PortLabel 150 1950 RESULT
+hades.symbols.PortSymbol 0 1800 RESULT
+hades.symbols.PortLabel 150 1350 FETCH
+hades.symbols.PortSymbol 0 1200 FETCH
 hades.symbols.PortLabel 150 750 REG_B
 hades.symbols.PortSymbol 0 600 REG_B
 hades.symbols.InstanceLabel 150 3450 CPU_mux

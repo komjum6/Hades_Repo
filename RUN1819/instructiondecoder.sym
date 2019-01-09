@@ -4,8 +4,8 @@ hades.symbols.PortLabel 4650 7350 3 HALT
 hades.symbols.PortSymbol 4800 7200 HALT
 hades.symbols.PortLabel 4650 6750 3 POP
 hades.symbols.PortSymbol 4800 6600 POP
-hades.symbols.PortLabel 4650 6150 3 PUSH
-hades.symbols.PortSymbol 4800 6000 PUSH
+hades.symbols.PortLabel 4650 6150 3 CONST_USE
+hades.symbols.PortSymbol 4800 6000 CONST_USE
 hades.symbols.PortLabel 4650 5550 3 FLAGS_SET
 hades.symbols.PortSymbol 4800 5400 FLAGS_SET
 hades.symbols.PortLabel 4650 4950 3 nWE
