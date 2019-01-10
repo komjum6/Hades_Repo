@@ -1,0 +1,23 @@
+	.START  0#	
+	
+	READ [i], R1  
+	READ [j], R2
+	READ [k], R3
+	
+loop:
+	ADD R1, R2, R1     
+	WRITE R1, [-512]
+	CMPf R1, R3 
+	JUMP.LE loop
+	JUMP.G Reset
+	HALT
+	
+Reset:
+	READ [i], R1 
+	READ [k], R3
+	JUMP loop
+	
+	
+i:  .DATA   96
+j:  .DATA   1
+k:	.DATA	121

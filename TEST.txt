@@ -1,0 +1,43 @@
+# Luko van der Maas
+		.START 0
+		
+		READ [in], R6
+		
+		PUSH R6
+		.CALL fib
+		WRITE R1, [out]
+		HALT
+	
+
+fib:	PUSH FP
+		MOVE SP, FP
+		
+		READ [FP+8], R2		# R2 = n
+		WRITE R2, [debug]
+		
+		CMPf R2, 1
+		JUMP.G rec
+		
+		MOVE R2, R1
+		MOVE FP, SP
+		POP FP
+		RET
+
+rec:	ADD -1, R2, R2		# R2 = n - 1
+		PUSH R2
+		.CALL fib
+		POP R2
+		PUSH R1	
+		ADD -1, R2, R2		# R2 = n - 2
+		PUSH R2
+		.CALL fib
+		READ [SP+4], R4
+		
+		ADD R1, R4, R1		# R1 = fib(n-1) + fib(n-2)
+		MOVE FP, SP
+		POP FP
+		RET
+	
+in:		.DATA 6
+out:	.DATA -1
+debug:	.DATA -1

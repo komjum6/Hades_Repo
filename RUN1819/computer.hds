@@ -14,13 +14,13 @@ hades.models.meta.Label i6 12000 7200 @N 1001 1 0 5 0 12 0.0 4 nRE
 hades.models.meta.Label i5 12000 12000 @N 1001 1 0 5 0 12 0.0 4 address\u0020bus
 hades.models.meta.Label i3 12000 9600 @N 1001 1 0 5 0 12 0.0 4 data\u0020bus\u0020\u0028to\u0020CPU\u0029
 hades.models.meta.Label i2 59400 3600 @N 1001 1 0 5 0 12 0.0 4 \u0028c\u0029\u00202012\u0020David\u0020N.\u0020Jansen\u002c\u0020Radboud\u0020Universiteit\u0020Nijmegen\u002c\u0020Nederland
-hades.models.io.PowerOnReset i1 7800 6000 @N 1001 0.005 0.5 
-hades.models.io.ClockGen i0 5400 2400 @N 1001 0.37 0.5 0.0 
+hades.models.io.PowerOnReset i1 7800 6000 @N 1001 0.005 0.5 null
+hades.models.io.ClockGen i0 5400 2400 @N 1001 0.37 0.5 0.0 null
 hades.models.rtlib.muxes.Mux21 i19 69600 30000 @N 1001 32 11111111111111111111111111111111_B 1.0E-8
-hades.models.rtlib.io.Subset i18 24600 14400 @N 1001 32 17 2 0000000000000000_B 1.0E-8
+hades.models.rtlib.io.Subset i18 24600 14400 @N 1001 32 17 2 0000000000100100_B 1.0E-8
 hades.models.gates.Nor2 i17 50400 16800 @N 1001 1.0E-8
 hades.models.rtlib.io.MergeBits i16 69600 25200 @N 1001 8 1.0E-8
-hades.models.rtlib.logic.Nor i15 34200 13800 @N 1001 9 1 1.0E-8
+hades.models.rtlib.logic.Nor i15 34200 13800 @N 1001 9 0 1.0E-8
 hades.models.rtlib.io.ExpanderVertical i14 59400 17400 @N 1001 8 1.0E-8
 hades.models.rtlib.io.Subset i13 31200 12600 @N 1001 32 31 9 00000000000000000000000_B 1.0E-8
 hades.models.meta.Label i11 12000 4800 @N 1001 1 0 5 0 12 0.0 4 HALTED
@@ -42,10 +42,10 @@ hades.models.rtlib.io.Constant i32 65400 24600 @N 1001 24 0000000000000000000000
 hades.models.gates.Or2 i31 32400 21600 @N 1001 1.0E-8
 hades.models.gates.And2Vertical i30 26400 12600 @N 1001 1.0E-8
 hades.models.io.LED nRE 76200 7200 @N 1001 0
-hades.models.rtlib.memory.RAMoe RAM_256KiB 37200 22200 @N 1001 65536 32 ./test.rom
-hades.models.rtlib.io.Subset i29 60000 13200 @N 1001 32 7 0 UUUUUUUU_B 1.0E-8
+hades.models.rtlib.memory.RAMoe RAM_256KiB 37200 22200 @N 1001 65536 32 C:/Users/julia/Documents/GitHub/Hades_Repo/new.rom
+hades.models.rtlib.io.Subset i29 60000 13200 @N 1001 32 7 0 00000000_B 1.0E-8
 hades.models.gates.Nor2 i28 55200 28800 @N 1001 1.0E-8
-hades.models.rtlib.io.Subset i27 36000 12600 @N 1001 32 8 0 000000000_B 1.0E-8
+hades.models.rtlib.io.Subset i27 36000 12600 @N 1001 32 8 0 010010000_B 1.0E-8
 hades.models.rtlib.muxes.TriBuf i26 70800 34200 @N 1001 32 ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ_B 1.0E-8
 hades.models.gates.And3 i25 55200 15000 @N 1001 1.0E-8
 hades.models.gates.Nor2 i24 50400 29400 @N 1001 1.0E-8
@@ -93,12 +93,12 @@ hades.signals.SignalStdLogic1164 n18 2 i21 Q2 i16 A2 2 2 69600 21000 73200 21000
 hades.signals.SignalStdLogic1164 n17 2 i21 Q1 i16 A1 2 2 69600 21600 73800 21600 2 73800 21600 73800 25200 0 
 hades.signals.SignalStdLogic1164 n16 2 i21 Q0 i16 A0 2 2 69600 22200 74400 22200 2 74400 22200 74400 25200 0 
 hades.signals.SignalStdLogic1164 n15 2 i14 Y7 i21 D7 1 2 60600 18000 62400 18000 0 
-hades.signals.SignalStdLogic1164 n14 2 i14 Y6 i21 D6 1 2 60600 18600 62400 18600 0 
 hades.signals.SignalStdLogicVector n39_0 32 5 RUN1819_CPU ADDRESSBUS address_bus A i18 A i13 A i27 A 10 2 24600 12000 16200 12000 2 16200 12000 16200 17400 2 16200 17400 15000 17400 2 16200 12000 7800 12000 2 36000 12000 76200 12000 2 31200 12000 24600 12000 2 24600 12000 24600 14400 2 31200 12000 31200 12600 2 31200 12000 36000 12000 2 36000 12000 36000 12600 4 24600 12000 31200 12000 36000 12000 16200 12000 
+hades.signals.SignalStdLogic1164 n14 2 i14 Y6 i21 D6 1 2 60600 18600 62400 18600 0 
 hades.signals.SignalStdLogic1164 n13 2 i14 Y5 i21 D5 1 2 60600 19200 62400 19200 0 
 hades.signals.SignalStdLogic1164 n12 2 i14 Y4 i21 D4 1 2 60600 19800 62400 19800 0 
-hades.signals.SignalStdLogic1164 n11 2 i14 Y3 i21 D3 1 2 60600 20400 62400 20400 0 
 hades.signals.SignalStdLogic1164 n43 2 i15 Y i36 B 3 2 32400 16800 32400 16200 2 32400 16200 36000 16200 2 36000 16200 36000 15600 0 
+hades.signals.SignalStdLogic1164 n11 2 i14 Y3 i21 D3 1 2 60600 20400 62400 20400 0 
 hades.signals.SignalStdLogic1164 n10 2 i14 Y2 i21 D2 1 2 60600 21000 62400 21000 0 
 hades.signals.SignalStdLogicVector n41 32 2 i39 Y i19 A1 3 2 67800 28200 67800 29400 2 67800 29400 70800 29400 2 70800 29400 70800 30000 0 
 hades.signals.SignalStdLogicVector n40 24 2 i32 Y i39 A 1 2 67200 26400 67200 27600 0 

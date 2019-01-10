@@ -21,7 +21,6 @@ hades.models.rtlib.muxes.Mux21 i13 37800 2400 @N 1001 32 00000000000000000000000
 hades.models.rtlib.muxes.BitDecoder i12 15000 -23400 @N 1001 4 1.0E-8
 hades.models.rtlib.io.ExpanderVertical i11 15600 14400 @N 1001 4 1.0E-8
 hades.models.rtlib.muxes.Mux41 i10 50400 21000 @N 1001 32 00000000000000000000000000001100_B 1.0E-8
-hades.models.Design \u002b5 36600 8400 @N 1001 ./add4.hds
 hades.models.Design \u002b4 36600 8400 @N 1001 ./add4.hds
 hades.models.rtlib.io.IpinVector ADDR_DEST 12000 -19800 @N 1001 4 1110_B 1.0E-9 0
 hades.models.io.Ipin nRESET 12000 20400 @N 1001 null U
